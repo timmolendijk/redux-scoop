@@ -1,0 +1,19 @@
+{
+  "name": "redux-scoop",
+  "version": "0.1.0",
+  "description": "State Container for Object-Oriented Programs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:://github.com/timmolendijk/redux-scoop"
+  },
+  "keywords": [
+    "redux",
+    "oop"
+  ],
+  "author": "Tim Molendijk <tim@timmolendijk.nl>",
+  "license": "ISC"
+}
