@@ -15,5 +15,9 @@
     "oop"
   ],
   "author": "Tim Molendijk <tim@timmolendijk.nl>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "recompose": "^0.22.0",
+    "redux": "^3.6.0"
+  }
 }
