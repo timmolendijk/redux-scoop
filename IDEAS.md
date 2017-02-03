@@ -141,15 +141,15 @@ Invoking `endLoad` would dispatch an action along the following lines:
 
 ```
 {
-  type: '@@scoopy/Controller.endLoad',
+  type: '@@scoop/Controller.endLoad',
   ref: {
-    '@@scoopy': 'ref',
+    '@@scoop': 'ref',
     type: 'Controller',
     id: null
   },
   args: [
     {
-      '@@scoopy': 'instance',
+      '@@scoop': 'instance',
       type: 'Event',
       data: {
         id: 13135135,

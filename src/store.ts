@@ -5,18 +5,18 @@ import Instance from './instance';
 import { getTypeOfKey, getKeyOfType } from './type';
 import { isViewComponent } from './view';
 
-const NS = '@@scoopy';
+const NS = '@@scoop';
 
 interface IRef {
   // `[NS]` is not a valid property definition (yet?)
-  readonly '@@scoopy': 'ref';
+  readonly '@@scoop': 'ref';
   readonly type: string;
   readonly id: IIdentifier | null;
 }
 
 interface IExternalState {
   // `[NS]` is not a valid property definition (yet?)
-  readonly '@@scoopy': IState;
+  readonly '@@scoop': IState;
   [external: string]: any;
 }
 
@@ -30,7 +30,7 @@ interface IStateTypeInstanceEntries {
 
 type IStateTypeInstances = {
   // `[NS]` is not a valid property definition (yet?)
-  readonly '@@scoopy': 'instances'
+  readonly '@@scoop': 'instances'
 } & IStateTypeInstanceEntries;
 
 interface IState {
@@ -38,7 +38,7 @@ interface IState {
 }
 
 function createRef(type: string, id: IIdentifier): IRef {
-  // `[NS]` is not recognized as `'@@scoopy'`, which is why the type assertion
+  // `[NS]` is not recognized as `'@@scoop'`, which is why the type assertion
   // is required here.
   return {
     [NS]: 'ref',
