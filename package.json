@@ -2,8 +2,9 @@
   "name": "redux-scoop",
   "version": "0.1.0",
   "description": "State Container for Object-Oriented Programs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "dependencies": {
     "recompose": "^0.22.0",
     "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
   }
 }
