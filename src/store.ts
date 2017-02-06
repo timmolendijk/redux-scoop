@@ -76,7 +76,7 @@ export const storeEnhancer = createStore => (externalReducer, preloadedState) =>
     const externalState = externalReducer(omit(state, [NS]), action);
     return {
       ...externalState,
-      [NS]: reducer(state[NS], action)
+      [NS]: reducer(state && state[NS], action)
     };
   }, preloadedState);
 
