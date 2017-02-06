@@ -1,5 +1,6 @@
 import { Store as ReduxStore } from 'redux';
 import shallowEqual from 'recompose/shallowEqual';
+import { omit } from 'lodash';
 import { IIdentifier } from '.';
 import Instance from './instance';
 import { getTypeOfKey, getKeyOfType } from './type';
@@ -72,9 +73,9 @@ export function resetRender(store: ReduxStore<IExternalState>) {
 
 export const storeEnhancer = createStore => (externalReducer, preloadedState) =>
   createStore((state, action) => {
-    state = externalReducer(state, action);
+    const externalState = externalReducer(omit(state, [NS]), action);
     return {
-      ...state,
+      ...externalState,
       [NS]: reducer(state[NS], action)
     };
   }, preloadedState);
