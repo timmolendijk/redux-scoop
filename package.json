@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/timmolendijk/redux-scoop#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "recompose": "^0.22.0",
     "redux": "^3.6.0"
   },
