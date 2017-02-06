@@ -2,14 +2,14 @@
   "name": "redux-scoop",
   "version": "0.1.0",
   "description": "State Container for Object-Oriented Programs",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https:://github.com/timmolendijk/redux-scoop"
+    "url": "git+https://github.com/timmolendijk/redux-scoop.git"
   },
   "keywords": [
     "redux",
@@ -17,6 +17,10 @@
   ],
   "author": "Tim Molendijk <tim@timmolendijk.nl>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timmolendijk/redux-scoop/issues"
+  },
+  "homepage": "https://github.com/timmolendijk/redux-scoop#readme",
   "dependencies": {
     "recompose": "^0.22.0",
     "redux": "^3.6.0"
