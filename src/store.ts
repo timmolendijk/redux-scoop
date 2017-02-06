@@ -7,33 +7,33 @@ import { isViewComponent } from './view';
 
 const NS = '@@scoop';
 
-interface IRef {
+export interface IRef {
   // `[NS]` is not a valid property definition (yet?)
   readonly '@@scoop': 'ref';
   readonly type: string;
   readonly id: IIdentifier | null;
 }
 
-interface IExternalState {
+export interface IExternalState {
   // `[NS]` is not a valid property definition (yet?)
   readonly '@@scoop': IState;
   [external: string]: any;
 }
 
-interface IStateTypeInstance {
+export interface IStateTypeInstance {
   [field: string]: boolean | string | number | IRef;
 }
 
-interface IStateTypeInstanceEntries {
+export interface IStateTypeInstanceEntries {
   [id: string]: IStateTypeInstance;
 }
 
-type IStateTypeInstances = {
+export type IStateTypeInstances = {
   // `[NS]` is not a valid property definition (yet?)
   readonly '@@scoop': 'instances'
 } & IStateTypeInstanceEntries;
 
-interface IState {
+export interface IState {
   [type: string]: IStateTypeInstance | IStateTypeInstances;
 }
 

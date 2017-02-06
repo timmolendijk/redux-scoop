@@ -2,7 +2,7 @@ import { Store as ReduxStore } from 'redux';
 import { IIdentifier } from '.';
 import { IType } from './type';
 
-interface IView {
+export interface IView {
   isViewComponent(value): boolean;
   getViewComponentType(component): IType;
   getViewComponentStore(component): ReduxStore<any>;
